@@ -57,7 +57,7 @@ chmod 000 test3
 rmdir test3
 ```
 -    Create simple script which prints current date. Try to execute it.
-
+[Скрипт](https://github.com/IamGeniuss/test_ggs/blob/main/datescrypt.sh)
 
 ## Log checking
 
