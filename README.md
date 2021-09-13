@@ -57,27 +57,42 @@ chmod 000 test3
 rmdir test3
 ```
 -    Create simple script which prints current date. Try to execute it.
+
 [Скрипт](https://github.com/IamGeniuss/test_ggs/blob/main/datescrypt.sh)
 
 ## Log checking
 
 -  Count lines in the file test.txt.
-
+```console
+wc -l test.txt
+```
 
 - Show last 3 lines from the test.txt file. 
-
+```console
+tail wc -n3 test.txt
+```
 
 -  Hom many uniq IP addresses accessed the website ? 
-
+```console
+awk '{print %1}' test.txt sort | unic | wc -l
+```
 
 -  IP address with most requests.
-
+```console
+awk '{print %1}' test.txt sort | unic -c | sort -nr | head -n 1
+```
 
 -  Top 3 IP addresses by amount of POST requests.
+```console
+grep POST test.txt | awk '{print %1}' test.txt sort | unic -c | sort -nr | head -n 1
 
+```
 
 -  Which IP addresses received 403 error ? 
+```console
+grep ' 403 ' test.txt | awk '{print %1}'
 
+```
 
 - Task with * . Write script to show which pages Google checked from the website 
 
