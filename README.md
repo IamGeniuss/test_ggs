@@ -15,11 +15,11 @@ touch test1/test1.txt
 
 -   Create copy of folder test1 with name test2.  
 ```console
-cp test1 test2
+cp -R test1 test2
 ```
 -    Delete file test1.txt inside test2 directory.
 ```console
-rm test1.txt /test2/
+rm test2/test1.txt
 ```
 -    Rename test2 folder into directory_without_file
 ```console
