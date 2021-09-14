@@ -33,6 +33,10 @@ echo "test1" > /test1/test1.txt
 ```console
 cat /test1/test1.txt
 ```
+#### OUTPUT
+```console
+test1
+```
 -    Insert 'test2' into the end of test1/test1.txt file.
 ```console
 echo "test2" >> /test1/test1.txt
