@@ -109,5 +109,5 @@ grep ' 403 ' test.txt | awk '{print $1}'
 Replace IP address with most requests on 127.0.0.1 in test.txt file 
 ```console
 awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
-sed -i 's/16 114.119.140.234/127.0.0.1/g' test.txt
+sed -i 's/114.119.140.234/127.0.0.1/g' test.txt
 ```
