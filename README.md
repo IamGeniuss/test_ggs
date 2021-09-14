@@ -39,7 +39,7 @@ echo "test2" >> /test1/test1.txt
 ```
 -    print the text from the test1/test1.txt file.
 ```console
-cat > /test1/test1.txt
+cat /test1/test1.txt
 ```
 - check the size of test1 directory
 ```console
