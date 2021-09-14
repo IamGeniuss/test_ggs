@@ -31,7 +31,7 @@ echo "test1" > /test1/test1.txt
 ```
 -    print the text from the test1/test1.txt file.
 ```console
-cat > /test1/test1.txt
+cat /test1/test1.txt
 ```
 -    Insert 'test2' into the end of test1/test1.txt file.
 ```console
