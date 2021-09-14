@@ -74,24 +74,23 @@ tail wc -n3 test.txt
 
 -  Hom many uniq IP addresses accessed the website ? 
 ```console
-awk '{print %1}' test.txt sort | unic | wc -l
+awk '{print $1}' test.txt | sort | uniq | wc -l
 ```
 
 -  IP address with most requests.
 ```console
-awk '{print %1}' test.txt sort | unic -c | sort -nr | head -n 1
+awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
 ```
 
 -  Top 3 IP addresses by amount of POST requests.
 ```console
-grep POST test.txt | awk '{print %1}' test.txt sort | unic -c | sort -nr | head -n 1
+grep POST test.txt | awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
 
 ```
 
 -  Which IP addresses received 403 error ? 
 ```console
-grep ' 403 ' test.txt | awk '{print %1}'
-
+grep ' 403 ' test.txt | awk '{print $1}'
 ```
 
 - Task with * . Write script to show which pages Google checked from the website 
@@ -99,3 +98,7 @@ grep ' 403 ' test.txt | awk '{print %1}'
 ## Replace
 
 Replace IP address with most requests on 127.0.0.1 in test.txt file 
+```console
+awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
+sed -i 's/16 114.119.140.234/127/0/0/1/g' test.txt
+```
