@@ -67,7 +67,7 @@ rmdir test3
 ```
 -    Create simple script which prints current date. Try to execute it.
 
-[Скрипт](https://github.com/IamGeniuss/test_ggs/blob/main/datescrypt.sh)
+[Scrypt](https://github.com/IamGeniuss/test_ggs/blob/main/datescrypt.sh)
 
 ## Log checking
 
@@ -96,7 +96,6 @@ awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
 grep POST test.txt | awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
 
 ```
-
 -  Which IP addresses received 403 error ? 
 ```console
 grep ' 403 ' test.txt | awk '{print $1}'
@@ -104,6 +103,21 @@ grep ' 403 ' test.txt | awk '{print $1}'
 
 - Task with * . Write script to show which pages Google checked from the website 
 
+[Scrypt]()
+#### OUTPUT
+```console
+/robots.txt
+/robots.txt
+/ecjoy/17810tmrr2811359.htm
+/robots.txt
+/robots.txt
+/economy/index.html
+/casecamp/7039dcwb3api11-abwh-151-mbj9.htm
+/robots.txt
+/robots.txt
+/ads.txt
+/vitosaka/12219lspkds-1722307.htm
+```
 ## Replace
 
 Replace IP address with most requests on 127.0.0.1 in test.txt file 
