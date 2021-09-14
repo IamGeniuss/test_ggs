@@ -103,7 +103,7 @@ grep ' 403 ' test.txt | awk '{print $1}'
 
 - Task with * . Write script to show which pages Google checked from the website 
 
-[Scrypt]()
+[Scrypt](https://github.com/IamGeniuss/test_ggs/blob/main/googlecheck.sh)
 #### OUTPUT
 ```console
 /robots.txt
