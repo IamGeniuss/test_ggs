@@ -45,6 +45,11 @@ echo "test2" >> /test1/test1.txt
 ```console
 cat /test1/test1.txt
 ```
+#### OUTPUT
+```console
+test1
+test2
+```
 - check the size of test1 directory
 ```console
 du -sh /test1
